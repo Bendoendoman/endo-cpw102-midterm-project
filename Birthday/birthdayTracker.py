@@ -1,4 +1,5 @@
 from classes import fileManager
+from classes import testClass
 #with open("test.txt") as f:
 #    data = f.read()
 
@@ -7,7 +8,14 @@ end = False
 
 
 def main():
+    test = testClass.TestClass()
+    
+    test.numberAdd(testString = "PleasePrint", testStringTwo="ThisShouldPrint")
+
+    
     f = fileManager.FileManager(r"Birthday\Birthdays.txt", "r")
+    
+
     
     with f() as r:
         r.read()
