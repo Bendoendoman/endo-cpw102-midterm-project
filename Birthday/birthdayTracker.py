@@ -1,11 +1,39 @@
+from classes import fileManager
+from classes import testClass
+#with open("test.txt") as f:
+#    data = f.read()
 
-fileOne = open(r"Birthday\Birthdays.txt", "r")
+end = False
+
+
+
 def main():
-    print(fileOne.read())
+    test = testClass.TestClass()
+    
+    test.numberAdd(testString = "PleasePrint", testStringTwo="ThisShouldPrint")
+
+    
+    f = fileManager.FileManager(r"Birthday\Birthdays.txt", "r")
     
 
+    
+    with f() as r:
+        r.read()
+    
+    while end == False:
+        print("give an action to perform")
+        nextAction = input()
+        match nextAction:
+            case "read":
+                openFile = open(r"Birthday\Birthdays.txt", "r")
+                print(openFile.read())   
+                openFile.close()
 
-
+            case "write":
+                writeFile = open(r"Birthday\Birthdays.txt", "a")
+                tempInput = input()
+                writeFile.write("\n" + tempInput)
+                writeFile.close()
 main()
 
 
