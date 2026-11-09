@@ -1,3 +1,4 @@
-Test
-TEST 
-test
+
+This should append on a new line
+This should go on a new line
+write 
