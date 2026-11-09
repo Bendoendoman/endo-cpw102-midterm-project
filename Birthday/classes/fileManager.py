@@ -1,5 +1,4 @@
-class FileManager():
-    
+class FileManager:
     def __init__(self, filename, mode):
         self.filename = filename
         self.mode = mode

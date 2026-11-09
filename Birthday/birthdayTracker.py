@@ -37,6 +37,9 @@ def main():
                         appender.write("\n" + tempInput)
             case "exit":
                 break
+#this is a test for my commit verification on github
+print("this is a test")
+
 main()
 
 
