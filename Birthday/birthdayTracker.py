@@ -9,8 +9,10 @@ end = False
 
 def main():
     test = testClass.TestClass()
-    
-    test.numberAdd(testString = "PleasePrint", testStringTwo="ThisShouldPrint")
+    name = input()
+    description = input()
+    owner = input()
+    test.numberAdd(testString = name, testStringTwo = description, testStringThree = owner)
 
     
     r = fileManager.FileManager(r"Birthday\Birthdays.txt", "r")
